@@ -3,27 +3,29 @@ package OOPS;
 import java.util.Scanner;
 
 public class PersonInfo {
-      String name;
-      String address;
-      Float height;
-      int age;
+    String name;
+    String address;
+    Float height;
+    int age;
 
-      void insertData(String nm,String addr, Float h, int a){
-          name = nm;
-          address = addr;
-          height = h;
-          age = a;
-      }
-      void display() {
-          System.out.println("!!!!!!!!! PERSON DETAILS !!!!!!!!!!");
-          System.out.println("Name:" + name);
-          System.out.println("Address:" + address);
-          System.out.println("Height:" + height);
-          System.out.println("Age:" + age);
-      }
+    void insertData(String nm, String addr, Float h, int a) {
+        name = nm;
+        address = addr;
+        height = h;
+        age = a;
+    }
+
+    void display() {
+        System.out.println("!!!!!!!!! PERSON DETAILS !!!!!!!!!!");
+        System.out.println("Name:" + name);
+        System.out.println("Address:" + address);
+        System.out.println("Height:" + height);
+        System.out.println("Age:" + age);
+    }
 }
-class PersonInfo1{
-    public static void main(String[] args){
+
+class PersonInfo1 {
+    public static void main(String[] args) {
         PersonInfo p1 = new PersonInfo();
         p1.name = "Amit";
         p1.address = "Kothrud";
