@@ -13,6 +13,7 @@ public class Star10 {
             System.out.println();
         }
         for (int i = 4; i >= 1; i--) {
+            System.out.print("");
             for (int j = 1; j <= 4; j++) {
                 if (j < i) {
                     System.out.print(" *");
