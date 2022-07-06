@@ -20,7 +20,9 @@ class HDFC implements BankOperations{
 }
 class BankImpl{
     public static void main(String[] args) {
-        Bank bank; // reference variable
+        BankOperations bank; // reference variable
         bank = new HDFC();
+        bank.getRateOfInterest();
+        bank.calculateInterest();
     }
 }
