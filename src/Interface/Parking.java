@@ -17,9 +17,9 @@ class ParkingImpl{
         TwoWheeler twoWheeler = new TwoWheeler();
         FourWheeler fourWheeler = new FourWheeler();
         if (fourWheeler instanceof Parking){
-            fourWheeler.show();
-        }else {
             twoWheeler.show();
+        }else {
+            fourWheeler.show();
         }
     }
 }
