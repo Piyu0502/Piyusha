@@ -10,11 +10,11 @@ public class MySqlDeleteDemo {
         String url = "jdbc:mysql://localhost:3306/Employee";
         String username = "root";
         String password = "Kbjoshi@123";
-        final String QUERY =  "delete from emp where empno = ?";
+        final String QUERY = "delete from emp where empno = ?";
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, username, password);
         PreparedStatement ps = con.prepareStatement(QUERY);
-        ps.setInt(1,121);
+        ps.setInt(1, 121);
         int no = ps.executeUpdate();
         System.out.println(no + "Row/s Affected");
     }

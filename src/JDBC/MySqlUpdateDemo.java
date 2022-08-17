@@ -14,8 +14,8 @@ public class MySqlUpdateDemo {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, username, password);
         PreparedStatement ps = con.prepareStatement(QUERY);
-        ps.setString(1,"SALESMAN");
-        ps.setInt(2,121);
+        ps.setString(1, "SALESMAN");
+        ps.setInt(2, 121);
         int no = ps.executeUpdate();
         System.out.println(no + "Row/s Updated");
     }
