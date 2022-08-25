@@ -26,7 +26,6 @@ class MPlayer {
     String companyName;
     double price;
 }
-
 class VehicleImpl {
     public static void main(String[] args) {
         Car car = new Car();
