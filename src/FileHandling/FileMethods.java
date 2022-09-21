@@ -9,7 +9,7 @@ public class FileMethods {
         try {
             if (file.createNewFile())
                 System.out.println("File is Created");
-            else{
+            else {
                 System.out.println("File Exists");
             }
 
@@ -17,9 +17,8 @@ public class FileMethods {
             System.out.println(e.getMessage());
         }
         System.out.println("IS FILE" + file.isFile());
-        System.out.println("PATH" +file.getPath());
+        System.out.println("PATH" + file.getPath());
         System.out.println(file.getName());
 
     }
-
 }
